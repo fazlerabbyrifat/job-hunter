@@ -22,7 +22,7 @@ const Banner = () => {
   const itemList = [["Developer", "Designer"], ["Recruiter", "Content-writer"], ["Seo Expert", "Problem-solver"]];
 
   return (
-    <div className="md:w-2/3 mx-auto my-10">
+    <div className="md:w-2/3 mx-auto mt-20">
       <Carousel
         showThumbs={false}
         showStatus={false}
