@@ -23,7 +23,7 @@ const News = () => {
         }
       </div>
         <div className="flex justify-center">
-        <Link>
+        <Link to="/news">
           <button className="btn btn-warning mt-4">
             See More
           </button>

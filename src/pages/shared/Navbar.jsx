@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-4 flex items-baseline space-x-4">
                 <Link
-                  to="/home"
+                  to="/"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
                 >
                   Home
@@ -58,6 +58,12 @@ const Navbar = () => {
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
                 >
                   Team
+                </Link>
+                <Link
+                  to="/blog"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
+                >
+                  Blog
                 </Link>
                 <div className="relative inline-block">
                   <button
@@ -119,7 +125,7 @@ const Navbar = () => {
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              to="/home"
+              to="/"
               className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
@@ -147,6 +153,12 @@ const Navbar = () => {
               className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Team
+            </Link>
+            <Link
+              to="/blog"
+              className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Blog
             </Link>
             <div className="relative inline-block">
               <button
