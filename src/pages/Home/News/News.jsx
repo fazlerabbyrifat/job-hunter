@@ -4,12 +4,12 @@ import NewsCard from "./NewsCard";
 import { Link } from "react-router-dom";
 
 const News = () => {
-  const [allNews, setNews] = useState([]);
+  const [allNews, setAllNews] = useState([]);
 
   useEffect(() => {
     fetch("/courses.json")
       .then((res) => res.json())
-      .then((data) => setNews(data));
+      .then((data) => setAllNews(data));
   }, []);
 
   return (

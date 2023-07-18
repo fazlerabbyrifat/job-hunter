@@ -48,6 +48,12 @@ const Navbar = () => {
                   Contact
                 </Link>
                 <Link
+                  to="/news"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
+                >
+                  Latest News
+                </Link>
+                <Link
                   to="/team"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
                 >
@@ -129,6 +135,12 @@ const Navbar = () => {
               className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
+            </Link>
+            <Link
+              to="/news"
+              className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Latest News
             </Link>
             <Link
               to="/team"

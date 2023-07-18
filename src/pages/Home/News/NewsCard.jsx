@@ -16,18 +16,18 @@ const NewsCard = ({ news }) => {
         alt={title}
         className="w-full h-64 object-cover rounded-lg"
       />
-      <h2 className="text-xl font-bold mt-5">{title}</h2>
-      <p className="text-gray-600">Instructor: {instructor}</p>
+      <h2 className="text-2xl font-bold mt-5">{title}</h2>
+      <p className="text-gray-600 text-xl font-semibold">Instructor: {instructor}</p>
       <p className="mt-2">{description}</p>
       <p className="text-green-600 font-bold mt-2">${price}</p>
-      <div className="flex items-center mt-2">
+      <div className="flex items-center justify-between mt-2">
         <Rating
           initialRating={rating}
           readonly
           emptySymbol={<span className="text-gray-400">☆</span>}
           fullSymbol={<span className="text-yellow-500">★</span>}
         />
-        <span className="text-gray-600 ml-1">{duration} mins</span>
+        <span className="text-gray-600">Course Duration: {duration} days</span>
       </div>
       <div className="mt-2 text-gray-500">
         <small>
