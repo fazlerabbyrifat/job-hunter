@@ -22,7 +22,7 @@ const Banner = () => {
   const itemList = [["Developer", "Designer"], ["Recruiter", "Content-writer"], ["Seo Expert", "Problem-solver"]];
 
   return (
-    <div className="w-2/3 mx-auto my-10">
+    <div className="md:w-2/3 mx-auto my-10">
       <Carousel
         showThumbs={false}
         showStatus={false}
@@ -31,16 +31,18 @@ const Banner = () => {
         interval={3000}
       >
         {dynamicText.map((item, index) => (
-          <div key={index} className="flex h-[420px] pt-20 gap-10 bg-gray-200">
-            <div className="flex-1 p-6 space-y-2 w-1/2 text-left">
+          <div key={index} className="flex flex-col md:flex-row-reverse md:items-center md:h-[420px] p-6 md:gap-10 bg-gray-200">
+            <div className="flex-1 md:order-2 md:w-1/2 md:text-left">
               <h1 className="text-3xl font-bold uppercase text-accent">{item.header}</h1>
               <p className="text-xl font-medium">{item.text}</p>
             </div>
-            <div className="flex-1 p-6 space-y-2 w-1/2 text-left">
+            <div className="flex-1 p-6 space-y-2 md:w-1/2 md:text-left">
               <h3 className="text-3xl font-bold mb-5">Our Job category</h3>
-              {itemList[index].map((item, idx) => (
-                <p key={idx} className="text-gray-800 border-2 border-teal-400 rounded-lg p-5 w-1/2 text-xl font-semibold">{item}</p>
-              ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {itemList[index].map((item, idx) => (
+                  <p key={idx} className="text-gray-800 border-2 border-teal-400 rounded-lg p-5 text-xl font-semibold">{item}</p>
+                ))}
+              </div>
             </div>
           </div>
         ))}
